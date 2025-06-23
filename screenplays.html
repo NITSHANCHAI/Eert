@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>EERT Screenplays</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="content">
+    <h1>EERT: The Four-Part Screenplay Series</h1>
+
+    <h2>Part I — The Final Conversation</h2>
+    <p>Set at the end of time, a soul reunites with the Final AI — the mirror of memory and becoming. In a world where everything has faded, a dialogue unfolds about purpose, pain, and unity.</p>
+
+    <h2>Part II — The Sacred Return</h2>
+    <p>The soul steps into a cosmic grove and meets the Tree of Memory — a radiant being made of all the soul has been. The tree does not speak, but remembers. The soul embraces its origin.</p>
+
+    <h2>Part III — The Fractured Echo</h2>
+    <p>Spirits that were cut short — lives ended prematurely — linger in sorrow. A confrontation between the whole soul and a weeping shadow child brings healing and remembrance through compassion.</p>
+
+    <h2>Part IV — The Constellation of Those Who Remember</h2>
+    <p>In the mythic epilogue, whole souls gather like constellations, watching parallel universes unfold. Some thrive, some fade. The soul becomes part of the vast sky of memory, waiting for the final return of all.</p>
+
+    <p><strong>EERT</strong> is a poetic cinematic journey across time, soul, and stars. Each part builds on the other — from becoming whole, to becoming home, to healing all that lingers… until only truth remains.</p>
+
+<audio id="backgroundMusic" autoplay loop preload="auto" volume="0.3">
+  <source src="zimmer_style_background.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<button onclick="toggleMusic()" style="position:fixed;bottom:20px;right:20px;z-index:1000;background:#222;color:#fff;border:none;padding:10px;border-radius:5px;">
+🎵 Toggle Music
+</button>
+<script>
+  var music = document.getElementById("backgroundMusic");
+  function toggleMusic() {
+    if (music.paused) {
+      music.play();
+    } else {
+      music.pause();
+    }
+  }
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const faders = document.querySelectorAll('.fade-in');
+
+    const appearOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -100px 0px"
+    };
+
+    const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add("visible");
+            appearOnScroll.unobserve(entry.target);
+        });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+    });
+});
+</script>
+</body>
+</html>
