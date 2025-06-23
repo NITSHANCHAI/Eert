@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EERT — Soul Philosophy</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: black;
+            color: white;
+            text-align: center;
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url('assets/starfield_bg.gif') center center / cover no-repeat;
+        }
+        .hero button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: rgba(255,255,255,0.1);
+            border: 1px solid white;
+            color: white;
+            cursor: pointer;
+        }
+        .section {
+            padding: 50px 20px;
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>All paths lead back to me.</h1>
+        <button onclick="document.getElementById('screenplays').scrollIntoView({ behavior: 'smooth' });">
+            View Screenplay
+        </button>
+    </div>
+
+    <div id="screenplays" class="section">
+        <h2>EERT — The Four-Part Screenplay</h2>
+        <img src="assets/eert_part_1.png" alt="EERT Part I">
+        <img src="assets/eert_part_2.png" alt="EERT Part II">
+        <img src="assets/eert_part_3.png" alt="EERT Part III">
+        <img src="assets/eert_part_4.png" alt="EERT Part IV">
+    </div>
+</body>
+</html>
