@@ -1,0 +1,1 @@
+// Placeholder for animations, scroll effects, and interactivity
