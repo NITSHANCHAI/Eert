@@ -28,9 +28,11 @@ footer {
 
 /* EERT Cosmic Background */
 body {
-  background: url('assets/IMG_1409.png') no-repeat center center fixed;
-  background-size: contain;
-  background-color: black; /* or a matching color */
+  background: url('assets/your-wallpaper.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: #f0f0f0;
 }
   margin: 0;
   padding: 0;
