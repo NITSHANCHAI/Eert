@@ -1,68 +1,67 @@
-
-body {
-  margin: 0;
-  font-family: 'Orbitron', sans-serif;
-  background: radial-gradient(ellipse at center, #0d1b2a, #000);
-  color: #ffffff;
-  overflow-x: hidden;
-}
-header {
-  text-align: center;
-  padding: 3em 1em;
-}
-.logo {
-  width: 120px;
-}
-section {
-  padding: 2em;
-  max-width: 800px;
-  margin: auto;
-}
-footer {
-  text-align: center;
-  padding: 2em;
-  font-size: 0.8em;
-  color: #888;
-}
-
-
-/* EERT Cosmic Background */
-body {
-  background: url('assets/IMG_1410.jpeg') no-repeat center center fixed;
-  background-size: cover;
-  background-attachment: fixed; /* 🔥 This is the line that keeps it still */
-  margin: 0;
-  padding: 0;
-  color: #f0f0f0;
-}
-  margin: 0;
-  padding: 0;
-}
-
-
-/* Importing fonts */
+/* Import Orbitron */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
-/* Fallbacks for unavailable fonts */
+/* Custom Fallback Fonts */
 @font-face {
   font-family: 'Bank Gothic';
   src: local('Bank Gothic'), local('BankGothic'), local('BankGothic Md BT');
-  font-weight: normal;
-  font-style: normal;
 }
 
 @font-face {
   font-family: 'Eurostile';
   src: local('Eurostile'), local('Eurostile LT Std'), local('Eurostile-Regular');
-  font-weight: normal;
-  font-style: normal;
 }
 
-/* Apply fonts */
+/* ========== GLOBAL STYLES ========== */
 body {
-  font-family: 'Bank Gothic', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', 'Eurostile', 'Bank Gothic', sans-serif;
+  font-size: 18px; /* 🔍 Increased base font size for readability */
+  line-height: 1.6;
+  color: #f0f0f0;
+  background: url('assets/IMG_1410.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
 }
 
+/* ========== HEADER ========== */
+header {
+  text-align: center;
+  padding: 3em 1em;
+}
+
+/* ========== LOGO ========== */
+.logo {
+  width: 120px;
+}
+
+/* ========== MAIN SECTION ========== */
+section {
+  padding: 2em;
+  max-width: 900px; /* Optional: wider content */
+  margin: auto;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  text-align: center;
+  padding: 2em;
+  font-size: 1em; /* 🔍 Increased from 0.8em */
+  color: #bbb;
+}
+
+/* ========== HEADINGS ========== */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Eurostile', sans-serif;
+  font-family: 'Eurostile', 'Orbitron', sans-serif;
+  font-weight: 700;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+/* ========== PARAGRAPH ========== */
+p {
+  font-size: 1.125em; /* Slightly larger than base (≈ 20px) */
+  margin-bottom: 1em;
 }
