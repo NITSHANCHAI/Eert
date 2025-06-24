@@ -28,7 +28,7 @@ footer {
 
 /* EERT Cosmic Background */
 body {
-  background: url('assets/your-wallpaper.jpg') no-repeat center center fixed;
+  background: url('assets/IMG_1409.png') no-repeat center center fixed;
   background-size: cover;
   background-attachment: fixed; /* 🔥 This is the line that keeps it still */
   margin: 0;
