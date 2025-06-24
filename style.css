@@ -77,3 +77,40 @@ p {
   font-size: 1.125em; /* Slightly larger than base (≈ 20px) */
   margin-bottom: 1em;
 }
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Sticky header styling */
+nav {
+  position: sticky;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 1em;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+nav a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive nav for mobile */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 1em;
+  }
+}

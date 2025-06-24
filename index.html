@@ -11,8 +11,47 @@
   <script defer="" src="script.js">
   </script>
   <link href="assets/logo.png" rel="icon" type="image/png"/>
- </head>
+ 
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  .sticky-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(20, 20, 20, 0.7);
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+    text-align: center;
+    padding: 1em 0;
+    font-family: 'Eurostile', sans-serif;
+  }
+  .sticky-nav a {
+    color: #f0f0f0;
+    text-decoration: none;
+    margin: 0 1.5em;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+  }
+  .sticky-nav a:hover {
+    color: #ffcc66;
+  }
+  body {
+    padding-top: 80px; /* Prevents content hiding under sticky nav */
+  }
+</style>
+</head>
  <body>
+
+<div class="sticky-nav">
+  <a href="#">Home</a>
+  <a href="#eert-philosophy">Philosophy</a>
+  <a href="#eert-screenplays">Screenplays</a>
+  <a href="#about">About</a>
+  <a href="#teaser">Teaser</a>
+</div>
+
   <header>
    <img alt="EERT Logo" class="logo" src="assets/eert_logo_pulsing.gif"/>
    <h1 style="text-align: center">
