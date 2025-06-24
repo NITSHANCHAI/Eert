@@ -1,1 +1,0 @@
-console.log('EERT Site Loaded');
