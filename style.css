@@ -1,29 +1,29 @@
-/* Import Orbitron */
+/* Import Orbitron as fallback */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
-/* Custom Fallback Fonts */
-@font-face {
-  font-family: 'Bank Gothic';
-  src: local('Bank Gothic'), local('BankGothic'), local('BankGothic Md BT');
-}
-
+/* Local fallback fonts */
 @font-face {
   font-family: 'Eurostile';
   src: local('Eurostile'), local('Eurostile LT Std'), local('Eurostile-Regular');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* ========== GLOBAL STYLES ========== */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Orbitron', 'Eurostile', 'Bank Gothic', sans-serif;
-  font-size: 18px; /* 🔍 Increased base font size for readability */
-  line-height: 1.6;
+  font-family: 'Eurostile', 'Orbitron', sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
   color: #f0f0f0;
   background: url('assets/IMG_1410.jpeg') no-repeat center center fixed;
   background-size: cover;
   background-attachment: fixed;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* ========== HEADER ========== */
@@ -40,7 +40,7 @@ header {
 /* ========== MAIN SECTION ========== */
 section {
   padding: 2em;
-  max-width: 900px; /* Optional: wider content */
+  max-width: 900px;
   margin: auto;
 }
 
@@ -48,20 +48,54 @@ section {
 footer {
   text-align: center;
   padding: 2em;
-  font-size: 1em; /* 🔍 Increased from 0.8em */
+  font-size: 1em;
   color: #bbb;
 }
 
 /* ========== HEADINGS ========== */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Eurostile', 'Orbitron', sans-serif;
+  font-family: 'Eurostile', sans-serif;
   font-weight: 700;
-  margin-top: 1em;
-  margin-bottom: 0.5em;
+  letter-spacing: 1px;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  position: relative;
+  text-align: left;
+  padding-bottom: 0.5em;
+  color: #ffffff;
+}
+
+/* Glowing underline effect */
+h1::after,
+h2::after,
+h3::after,
+h4::after,
+h5::after,
+h6::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #00f0ff, #ffffff, #00f0ff);
+  box-shadow: 0 0 8px #00f0ff, 0 0 12px #00f0ff;
+  border-radius: 2px;
+  animation: glowline 2.5s ease-in-out infinite alternate;
+}
+
+/* Glowing animation keyframes */
+@keyframes glowline {
+  0% {
+    box-shadow: 0 0 6px #00f0ff, 0 0 10px #00f0ff;
+  }
+  100% {
+    box-shadow: 0 0 12px #00f0ff, 0 0 20px #00f0ff;
+  }
 }
 
 /* ========== PARAGRAPH ========== */
 p {
-  font-size: 1.125em; /* Slightly larger than base (≈ 20px) */
+  font-size: 1.125em;
   margin-bottom: 1em;
 }
