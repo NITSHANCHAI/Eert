@@ -30,6 +30,7 @@ footer {
 body {
   background: url('assets/your-wallpaper.jpg') no-repeat center center fixed;
   background-size: cover;
+  background-attachment: fixed; /* 🔥 This is the line that keeps it still */
   margin: 0;
   padding: 0;
   color: #f0f0f0;
