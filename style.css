@@ -1,0 +1,64 @@
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: radial-gradient(ellipse at center, #0d1b2a, #000);
+  color: #ffffff;
+  overflow-x: hidden;
+}
+header {
+  text-align: center;
+  padding: 3em 1em;
+}
+.logo {
+  width: 120px;
+}
+section {
+  padding: 2em;
+  max-width: 800px;
+  margin: auto;
+}
+footer {
+  text-align: center;
+  padding: 2em;
+  font-size: 0.8em;
+  color: #888;
+}
+
+
+/* EERT Cosmic Background */
+body {
+  background: url('assets/eert_background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* Fallbacks for unavailable fonts */
+@font-face {
+  font-family: 'Bank Gothic';
+  src: local('Bank Gothic'), local('BankGothic'), local('BankGothic Md BT');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Eurostile';
+  src: local('Eurostile'), local('Eurostile LT Std'), local('Eurostile-Regular');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply fonts */
+body {
+  font-family: 'Eurostile', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bank Gothic', sans-serif;
+}
