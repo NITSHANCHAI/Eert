@@ -22,10 +22,20 @@ body {
   color: #f0f0f0;
   background-image: url('assets/IMG_1410.jpeg');
   background-repeat: no-repeat;
-  background-position: center top;
-  background-size: contain;
+  background-position: center center;
+  background-size: cover;
   background-attachment: fixed;
   overflow-x: hidden;
+  
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4); /* subtle darkness for readability */
+  z-index: -1;
 }
 
 /* ========== HEADER ========== */
