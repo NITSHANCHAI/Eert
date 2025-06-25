@@ -351,3 +351,12 @@ nav a:hover {
     padding: 2em;
     border-radius: 12px;
 }
+
+/* Enhanced translucent background styling */
+.translucent-background {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2em 3em;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 2em auto;
+}
