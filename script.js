@@ -41,12 +41,5 @@ function enterUniverse() {
     audio.volume = 0.5;
     audio.play();
   }
-  document.getElementById("philosophy").scrollIntoView({ behavior: "smooth" });
-}
-
-function openMemory(id) {
-  document.getElementById(id).style.display = "block";
-}
-function closeMemory(id) {
-  document.getElementById(id).style.display = "none";
+  document.getElementById("eert-philosophy").scrollIntoView({ behavior: "smooth" });
 }
