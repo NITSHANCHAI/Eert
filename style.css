@@ -332,3 +332,22 @@ nav a:hover {
     text-shadow: 0 0 4px #fff, 0 0 8px #88ccff, 0 0 12px #88ccff;
   }
 }
+
+
+/* Centered content styling for better readability */
+.centered-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2em;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6); /* slight dark overlay for better text visibility */
+    border-radius: 10px;
+}
+
+
+/* Translucent background for special emphasis */
+.translucent-background {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2em;
+    border-radius: 12px;
+}
