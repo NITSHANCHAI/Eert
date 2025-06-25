@@ -25,21 +25,18 @@ document.querySelectorAll('.collapsible-toggle').forEach(button => {
   });
 });
 
-function toggleAccordion(btn) {
-  const body = btn.nextElementSibling;
-  body.style.display = (body.style.display === "block") ? "none" : "block";
-}
 
-function enterUniverse() {
-  const overlay = document.getElementById("landing-overlay");
-  overlay.style.opacity = "0";
-  setTimeout(() => {
-    overlay.style.display = "none";
-  }, 1000);
-  const audio = document.querySelector("audio");
-  if (audio) {
-    audio.volume = 0.5;
-    audio.play();
+
+document.addEventListener("DOMContentLoaded", function () {
+  function enterUniverse() {
+    const target = document.getElementById("eert-philosophy");
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    } else {
+      console.warn("Target section #eert-philosophy not found.");
+    }
   }
-  document.getElementById("eert-philosophy").scrollIntoView({ behavior: "smooth" });
-}
+
+  // Attach function globally
+  window.enterUniverse = enterUniverse;
+});
