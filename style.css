@@ -144,3 +144,207 @@ nav a:hover {
 .collapsible-content.open {
   display: block;
 }
+
+/* Glowing email link */
+.glow-link {
+  color: #0ff;
+  text-decoration: none;
+  transition: text-shadow 0.3s ease, color 0.3s ease;
+}
+
+.glow-link:hover {
+  color: #aff;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+.accordion-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  margin-bottom: 2em;
+  border: 1px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #111;
+}
+
+.accordion-header {
+  width: 100%;
+  text-align: left;
+  background: #111;
+  color: #0ff;
+  font-size: 1.1em;
+  padding: 1em;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.accordion-header:hover {
+  background: #222;
+}
+
+.accordion-body {
+  padding: 1em;
+  display: block;
+}
+
+.storyboard-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  border: 1px solid #222;
+  margin-bottom: 1em;
+}
+
+.download-btn {
+  background: transparent;
+  color: #0ff;
+  padding: 0.5em 1em;
+  border: 1px solid #0ff;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.download-btn:hover {
+  background: #0ff;
+  color: #000;
+}
+
+.toggle-script {
+  background: none;
+  border: 1px solid #0ff;
+  color: #0ff;
+  padding: 0.4em 1em;
+  margin-top: 1em;
+  cursor: pointer;
+  font-size: 0.9em;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.toggle-script:hover {
+  background: #0ff;
+  color: #000;
+}
+
+.script-content {
+  margin-top: 1em;
+  background: #111;
+  padding: 1em;
+  border-left: 2px solid #0ff;
+}
+
+/* Landing Overlay */
+#landing-overlay {
+  font-family: Orbitron, sans-serif;
+  color: #0ff;
+  font-size: 1.2em;
+  animation: fadeIn 2s ease forwards;
+}
+
+.landing-symbol {
+  font-size: 4em;
+  margin-bottom: 1em;
+  animation: pulse 3s infinite;
+}
+
+.landing-quote {
+  margin-bottom: 2em;
+  opacity: 0;
+  animation: fadeText 3s ease forwards;
+  animation-delay: 2s;
+}
+
+.enter-btn {
+  background: transparent;
+  border: 2px solid #0ff;
+  color: #0ff;
+  padding: 0.8em 2em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  opacity: 0;
+  animation: fadeText 2s ease forwards;
+  animation-delay: 4s;
+}
+
+.enter-btn:hover {
+  background: #0ff;
+  color: #000;
+}
+
+/* Animations */
+@keyframes fadeText {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.6; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.archive-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+.memory-node {
+  background: #111;
+  border: 2px solid #0ff;
+  padding: 1em 2em;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1em;
+  text-align: center;
+  color: #0ff;
+}
+
+.memory-node:hover {
+  background: #0ff;
+  color: #000;
+}
+
+.memory-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  backdrop-filter: blur(6px);
+}
+
+.modal-content {
+  background-color: #111;
+  margin: 10% auto;
+  padding: 2em;
+  border: 1px solid #0ff;
+  width: 80%;
+  color: #0ff;
+  font-family: Orbitron, sans-serif;
+  border-radius: 8px;
+}
+
+.close {
+  color: #0ff;
+  float: right;
+  font-size: 2em;
+  font-weight: bold;
+  cursor: pointer;
+}

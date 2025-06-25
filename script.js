@@ -24,3 +24,29 @@ document.querySelectorAll('.collapsible-toggle').forEach(button => {
     button.textContent = content.classList.contains('open') ? "Read Less" : "Read More";
   });
 });
+
+function toggleAccordion(btn) {
+  const body = btn.nextElementSibling;
+  body.style.display = (body.style.display === "block") ? "none" : "block";
+}
+
+function enterUniverse() {
+  const overlay = document.getElementById("landing-overlay");
+  overlay.style.opacity = "0";
+  setTimeout(() => {
+    overlay.style.display = "none";
+  }, 1000);
+  const audio = document.querySelector("audio");
+  if (audio) {
+    audio.volume = 0.5;
+    audio.play();
+  }
+  document.getElementById("philosophy").scrollIntoView({ behavior: "smooth" });
+}
+
+function openMemory(id) {
+  document.getElementById(id).style.display = "block";
+}
+function closeMemory(id) {
+  document.getElementById(id).style.display = "none";
+}
