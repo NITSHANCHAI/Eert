@@ -43,3 +43,20 @@ function enterUniverse() {
   }
   document.getElementById("philosophy").scrollIntoView({ behavior: "smooth" });
 }
+
+
+
+// Background music toggle
+const audio = document.getElementById('bg-music');
+const toggleBtn = document.getElementById('music-toggle');
+if (toggleBtn && audio) {
+  toggleBtn.addEventListener('click', () => {
+    if (audio.paused) {
+      audio.play();
+      toggleBtn.textContent = '🔊 Music On';
+    } else {
+      audio.pause();
+      toggleBtn.textContent = '🔇 Music Off';
+    }
+  });
+}
