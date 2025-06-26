@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Starfield Background</title>
+<style>
+  body {
+    margin: 0;
+    overflow: hidden;
+    background: black;
+  }
+  canvas {
+    display: block;
+  }
+</style>
+</head>
+<body>
+<canvas id="starfield"></canvas>
+<script>
+const canvas = document.getElementById('starfield');
+const ctx = canvas.getContext('2d');
+let w = canvas.width = window.innerWidth;
+let h = canvas.height = window.innerHeight;
+let stars = Array(500).fill().map(() => ({
+  x: Math.random() * w,
+  y: Math.random() * h,
+  z: Math.random() * w
+}));
+
+function animate() {
+  ctx.fillStyle = "black";
+  ctx.fillRect(0, 0, w, h);
+  ctx.fillStyle = "white";
+  stars.forEach(star => {
+    let k = 128.0 / star.z;
+    let x = (star.x - w / 2) * k + w / 2;
+    let y = (star.y - h / 2) * k + h / 2;
+    if (x >= 0 && x < w && y >= 0 && y < h) {
+      let size = (1 - star.z / w) * 3;
+      ctx.beginPath();
+      ctx.arc(x, y, size, 0, Math.PI * 2);
+      ctx.fill();
+    }
+    star.z -= 2;
+    if (star.z <= 0) {
+      star.z = w;
+    }
+  });
+  requestAnimationFrame(animate);
+}
+animate();
+window.onresize = () => {
+  w = canvas.width = window.innerWidth;
+  h = canvas.height = window.innerHeight;
+};
+</script>
+</body>
+</html>
