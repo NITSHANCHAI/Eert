@@ -1,4 +1,13 @@
-*/
+#home .wallpaper {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('/assets/eerthomewallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: -1;
+} */
 #illusion .illusion-wallpaper {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -113,50 +122,4 @@
 section {
   position: relative;
   overflow: hidden;
-}
-
-
-.wallpaper {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  z-index: -2;
-}
-
-
-#home .wallpaper {
-  background-image: url('/assets/eerthomewallpaper.jpg');
-}
-#illusion .wallpaper {
-  background-image: url('/assets/eertillusionwallpaper.jpg');
-}
-#who .wallpaper {
-  background-image: url('/assets/eertwhowallpaper.jpg');
-}
-#why .wallpaper {
-  background-image: url('/assets/eertwhywallpaper.jpg');
-}
-#purpose .wallpaper {
-  background-image: url('/assets/eertpurposewallpaper.jpg');
-}
-#when .wallpaper {
-  background-image: url('/assets/eertwhenwallpaper.jpg');
-}
-#how .wallpaper {
-  background-image: url('/assets/eerthowwallpaper.jpg');
-}
-#where .wallpaper {
-  background-image: url('/assets/eertwherewallpaper.jpg');
-}
-#spirits .wallpaper {
-  background-image: url('/assets/eertspiritswallpaper.jpg');
-}
-#screenplay .wallpaper {
-  background-image: url('/assets/eertscreenplaywallpaper.jpg');
-}
-#return .wallpaper {
-  background-image: url('/assets/eertreturnwallpaper.jpg');
 }
