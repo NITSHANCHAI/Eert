@@ -277,7 +277,7 @@ blockquote:hover, .quote:hover {
 </a>
 
 </div>
-<div class="mobile-swipe-cue">← Swipe to Remember →</div>
+
 <style>
 @media only screen and (max-width: 768px) {
   .mobile-swipe-cue {
@@ -302,6 +302,9 @@ blockquote:hover, .quote:hover {
 <div class="footer-note" style="text-align:center; padding:4vh 0 10vh 0; font-size: 0.9em; color: #aaa;">
   © 2025 EERT. All rights reserved.
 </div>
+
+<div class="mobile-swipe-cue">← Swipe to Remember →</div>
+
 </section>
 <section class="page" id="illusion" style="background:#0a0a0a;"><div class="wallpaper illusion-wallpaper"></div>
 <div class="wallpaper"></div>
@@ -1101,6 +1104,17 @@ document.addEventListener('mousemove', function(e) {
 });
 </script>
 
+
+
+
+
+<script>
+function togglePDF(id) {
+  var pdf = document.getElementById(id);
+  pdf.style.display = pdf.style.display === "none" ? "block" : "none";
+}
+</script>
+
 <audio id="cosmic-audio" loop>
   <source src="assets/cosmic-space-ambient-relax-258247.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
@@ -1110,13 +1124,6 @@ document.addEventListener('mousemove', function(e) {
   🔊 Play Sound
 </button>
 
-
-<script>
-function togglePDF(id) {
-  var pdf = document.getElementById(id);
-  pdf.style.display = pdf.style.display === "none" ? "block" : "none";
-}
-</script>
 </body>
 
 </html>
