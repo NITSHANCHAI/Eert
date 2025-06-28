@@ -1,125 +1,112 @@
+
+/* 🌌 Wallpaper Backgrounds for Each Section */
+
 #home .wallpaper {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url('/assets/eerthomewallpaper.jpg');
+  background-image: url('assets/eerthomewallpaper.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  z-index: -1;
-} */
-#illusion .illusion-wallpaper {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url('/assets/illusion-wallpaper.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  z-index: -1;
+  z-index: 0;
 }
 
-#who .who-wallpaper {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url('/assets/who-wallpaper.jpg');
+#illusion .wallpaper {
+  background-image: url('assets/illusionwallpaper.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  z-index: -1;
-}
-
-#why .why-wallpaper {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url('/assets/why-wallpaper.jpg');
+  z-index: 0;
+}
+
+#why .wallpaper {
+  background-image: url('assets/whywallpaper.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  z-index: -1;
-}
-
-#purpose .purpose-wallpaper {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url('/assets/purpose-wallpaper.jpg');
+  z-index: 0;
+}
+
+#who .wallpaper {
+  background-image: url('assets/whowallpaper.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  z-index: -1;
-}
-
-#when .when-wallpaper {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url('/assets/when-wallpaper.jpg');
+  z-index: 0;
+}
+
+#purpose .wallpaper {
+  background-image: url('assets/purposewallpaper.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  z-index: -1;
-}
-
-#how .how-wallpaper {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url('/assets/how-wallpaper.jpg');
+  z-index: 0;
+}
+
+#when .wallpaper {
+  background-image: url('assets/whenwallpaper.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  z-index: -1;
-}
-
-#where .where-wallpaper {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url('/assets/where-wallpaper.jpg');
+  z-index: 0;
+}
+
+#how .wallpaper {
+  background-image: url('assets/howwallpaper.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  z-index: -1;
-}
-
-#return .return-wallpaper {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url('/assets/return-wallpaper.jpg');
+  z-index: 0;
+}
+
+#where .wallpaper {
+  background-image: url('assets/wherewallpaper.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  z-index: -1;
-}
-
-#spirits .spirits-wallpaper {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url('/assets/spirits-wallpaper.jpg');
+  z-index: 0;
+}
+
+#spirits .wallpaper {
+  background-image: url('assets/spiritswallpaper.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  z-index: -1;
-}
-
-#screenplay .screenplay-wallpaper {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url('/assets/screenplay-wallpaper.jpg');
+  z-index: 0;
+}
+
+#screenplay .wallpaper {
+  background-image: url('assets/screenplaywallpaper.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  z-index: -1;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 0;
 }
 
-
-section {
-  position: relative;
-  overflow: hidden;
+#return .wallpaper {
+  background-image: url('assets/returnwallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 0;
 }
