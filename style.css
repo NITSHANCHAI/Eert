@@ -56,3 +56,13 @@ nav.swipe-nav::after {
 .nav-item {
   min-width: 100px !important;
 }
+
+
+/* Added for better mobile spacing */
+nav.swipe-nav {
+  padding: 12px 40px 12px 60px !important;
+}
+
+.nav-item:first-child {
+  margin-left: 20px !important;
+}
