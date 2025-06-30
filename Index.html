@@ -2627,5 +2627,38 @@ toggle.addEventListener("click", () => {
     🔊 Play Sound
    </button>
   </audio>
+  <script>
+   document.addEventListener('DOMContentLoaded', function () {
+  const sections = [document.getElementById("home"), document.getElementById("illusion"), document.getElementById("who"), document.getElementById("why"), document.getElementById("purpose"), document.getElementById("when"), document.getElementById("how"), document.getElementById("where"), document.getElementById("screenplay"), document.getElementById("vision"), document.getElementById("reason"), document.getElementById("me"), document.getElementById("spirits"), document.getElementById("return")];
+  const navLinks = document.querySelectorAll('.nav-item a');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + entry.target.id) {
+            link.classList.add('active');
+          }
+        });
+      }
+    });
+  }, {
+    threshold: 0.6
+  });
+
+  sections.forEach(section => {
+    if (section) observer.observe(section);
+  });
+});
+  </script>
+  <script>
+   window.addEventListener('load', () => {
+  const nav = document.querySelector('.swipe-nav');
+  if (nav) {
+    nav.scrollLeft = 0;
+  }
+});
+  </script>
  </body>
 </html>
