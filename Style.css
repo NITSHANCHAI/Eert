@@ -1,0 +1,228 @@
+
+.page {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.wallpaper {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('/assets/eerthomewallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+#home .wallpaper {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('/assets/eerthomewallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: -1;
+} */
+#illusion .illusion-wallpaper {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('/assets/illusion-wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+#who .who-wallpaper {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('/assets/who-wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+#why .why-wallpaper {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('/assets/why-wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+#purpose .purpose-wallpaper {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('/assets/purpose-wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+#when .when-wallpaper {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('/assets/when-wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+#how .how-wallpaper {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('/assets/how-wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+#where .where-wallpaper {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('/assets/where-wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+#return .return-wallpaper {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('/assets/return-wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+#spirits .spirits-wallpaper {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('/assets/spirits-wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+#screenplay .screenplay-wallpaper {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('/assets/screenplay-wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+.learn-more-link {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 0.5em 1em;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: background 0.3s;
+  margin-top: 1em;
+}
+
+.learn-more-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 500px) {
+  .learn-more-link {
+    font-size: 0.9rem;
+    padding: 0.4em 0.8em;
+  }
+}
+
+
+nav.swipe-nav {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 0 16px;
+  scroll-snap-align: center;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+  font-size: 1em;
+  transition: opacity 0.3s;
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
+}
+
+.nav-item.active a {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  nav.swipe-nav {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  nav.swipe-nav::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.swipe-nav {
+  flex-wrap: nowrap;
+}
+
+.nav-item {
+  flex: 0 0 auto;
+  margin-right: 20px;
+  scroll-snap-align: center;
+}
