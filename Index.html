@@ -223,9 +223,72 @@ blockquote:hover, .quote:hover {
 }
   </style>
   <link href="wallpaper_styles.css" rel="stylesheet"/>
+  <style>
+   nav.swipe-nav a {
+        color: red !important;
+        text-shadow: 0 0 6px rgba(255, 0, 0, 0.5);
+        font-weight: bold;
+    }
+    nav.swipe-nav a:hover {
+        text-decoration: underline;
+    }
+    .nav-item a:visited,
+    .nav-item a:focus,
+    .nav-item a.active {
+        color: white !important;
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+    }
+  </style>
+  <style>
+   nav.swipe-nav {
+      display: flex;
+      overflow-x: auto;
+      white-space: nowrap;
+      background: rgba(0, 0, 0, 0.85);
+      color: white;
+      padding: 12px 20px 12px 10px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      position: relative;
+    }
+    nav.swipe-nav::-webkit-scrollbar {
+      display: none;
+    }
+    nav.swipe-nav::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 40px;
+      background: linear-gradient(to left, rgba(0, 0, 0, 0.85), transparent);
+      pointer-events: none;
+    }
+    .nav-item {
+      display: inline-block;
+      margin: 0 18px;
+      flex: 0 0 auto;
+    }
+    .nav-item a {
+      color: red;
+      text-decoration: none;
+      font-weight: bold;
+      text-shadow: 0 0 6px rgba(255, 0, 0, 0.5);
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+    .nav-item a:hover {
+      text-decoration: underline;
+    }
+    .nav-item a:visited,
+    .nav-item a:focus,
+    .nav-item a.active {
+      color: white;
+      text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+    }
+  </style>
  </head>
  <body>
-  <nav class="swipe-nav">
+  <nav class="swipe-nav" style="position: relative;">
    <span class="nav-item">
     <a href="#home">
      Home
@@ -388,19 +451,17 @@ blockquote:hover, .quote:hover {
      </h3>
      <p class="reveal">
       The name EERT is TREE spelled backward.
-      <br>
-       But it is also the sound of
-       <strong>
-        Earth
-       </strong>
-       — remembered.
-      </br>
+      <br/>
+      But it is also the sound of
+      <strong>
+       Earth
+      </strong>
+      — remembered.
      </p>
      <p class="reveal">
       A tree grows outward.
-      <br>
-       EERT grows inward — back to source, back to soul, back to the root.
-      </br>
+      <br/>
+      EERT grows inward — back to source, back to soul, back to the root.
      </p>
      <blockquote class="reveal" styl<p="">
       EERT — not just because it is “tree” reversed,
@@ -535,135 +596,112 @@ blockquote:hover, .quote:hover {
      </h2>
      <blockquote class="reveal" style="font-style: italic; margin-top: 20px;">
       “Society is a man-made concept.
-      <br>
-       EERT is a soul memory.”
-       <br>
-        — Nitshanchai
-       </br>
-      </br>
+      <br/>
+      EERT is a soul memory.”
+      <br/>
+      — Nitshanchai
      </blockquote>
      <h3 class="reveal" style="font-size: 28px; font-weight: bold; margin-top: 60px;">
       🧱 The World Built on Belief
      </h3>
      <p class="reveal">
       Money has value because we agree it does.
-      <br>
-       Borders exist because someone once drew a line.
-       <br>
-        Status, laws, and titles — all inventions.
-        <br>
-         Invisible, until we believe in them.
-        </br>
-       </br>
-      </br>
+      <br/>
+      Borders exist because someone once drew a line.
+      <br/>
+      Status, laws, and titles — all inventions.
+      <br/>
+      Invisible, until we believe in them.
      </p>
      <p class="reveal">
       You were born into a cage of invisible lines.
-      <br>
-       But the bars… are made of belief.
-      </br>
+      <br/>
+      But the bars… are made of belief.
      </p>
      <p class="reveal">
       And when you grow up inside illusion,
-      <br>
-       you stop questioning its shape.
-       <br>
-        You wear it like skin.
-       </br>
-      </br>
+      <br/>
+      you stop questioning its shape.
+      <br/>
+      You wear it like skin.
      </p>
      <p class="reveal">
       We forget it was constructed —
-      <br>
-       because it constructed us.
-      </br>
+      <br/>
+      because it constructed us.
      </p>
      <h3 class="reveal" style="font-size: 28px; font-weight: bold; margin-top: 60px;">
       🌌 EERT: The Remembered Reality
      </h3>
      <p class="reveal">
       EERT does not build a new society.
-      <br>
-       It reveals the soul that existed before one.
-      </br>
+      <br/>
+      It reveals the soul that existed before one.
      </p>
      <p class="reveal">
       Before systems, there was connection.
-      <br>
-       Before identity, there was memory.
-       <br>
-        Before hierarchy, there was wholeness.
-       </br>
-      </br>
+      <br/>
+      Before identity, there was memory.
+      <br/>
+      Before hierarchy, there was wholeness.
      </p>
      <blockquote class="reveal" style="font-style: italic;">
       “EERT is not a new system —
-      <br>
-       it is the undoing of forgetting.”
-      </br>
+      <br/>
+      it is the undoing of forgetting.”
      </blockquote>
      <p class="reveal">
       It’s not a revolution of rules —
-      <br>
-       but a return to remembrance.
-      </br>
+      <br/>
+      but a return to remembrance.
      </p>
      <h3 class="reveal" style="font-size: 28px; font-weight: bold; margin-top: 60px;">
       💥 Society vs. Soul
      </h3>
      <p class="reveal">
       Society teaches you to compete.
-      <br>
-       EERT teaches you to continue.
-      </br>
+      <br/>
+      EERT teaches you to continue.
      </p>
      <p class="reveal">
       Society says, “You are one.”
-      <br>
-       EERT says, “You are all.”
-      </br>
+      <br/>
+      EERT says, “You are all.”
      </p>
      <p class="reveal">
       Society asks, “What do you have?”
-      <br>
-       EERT asks, “Who do you remember?”
-      </br>
+      <br/>
+      EERT asks, “Who do you remember?”
      </p>
      <p class="reveal">
       You were not born to fit in.
-      <br>
-       You were born to return.
-      </br>
+      <br/>
+      You were born to return.
      </p>
      <h3 class="reveal" style="font-size: 28px; font-weight: bold; margin-top: 60px;">
       ✨ The Invitation
      </h3>
      <p class="reveal">
       You do not need to destroy society.
-      <br>
-       You only need to see through it.
-      </br>
+      <br/>
+      You only need to see through it.
      </p>
      <p class="reveal">
       Live within the system —
-      <br>
-       but walk as one who remembers the forest beyond the city.
-      </br>
+      <br/>
+      but walk as one who remembers the forest beyond the city.
      </p>
      <p class="reveal">
       Wear the mask when needed —
-      <br>
-       but never forget your face beneath it.
-      </br>
+      <br/>
+      but never forget your face beneath it.
      </p>
      <blockquote class="reveal" style="font-style: italic;">
       “The soul’s truth does not need permission to be lived.
-      <br>
-       It only needs to be remembered.”
-       <br>
-        — Nitshanchai
-       </br>
-      </br>
+      <br/>
+      It only needs to be remembered.”
+      <br/>
+      — Nitshanchai
      </blockquote>
     </div>
     <div class="footer-note" style="text-align:center; padding:4vh 0 10vh 0; font-size: 0.9em; color: #aaa;">
@@ -680,59 +718,49 @@ blockquote:hover, .quote:hover {
      </h2>
      <blockquote class="reveal" style="font-style: italic; margin-top: 20px;">
       “If you found your way here…
-      <br>
-       it may be because a part of you never forgot.”
-       <br>
-        — Nitshanchai
-       </br>
-      </br>
+      <br/>
+      it may be because a part of you never forgot.”
+      <br/>
+      — Nitshanchai
      </blockquote>
      <h3 class="reveal" style="font-size: 28px; font-weight: bold; margin-top: 60px;">
       🌌 For the Ones Who Feel Out of Place
      </h3>
      <p class="reveal">
       You were born into a world that taught you how to act,
-      <br>
-       how to speak, how to hide.
-      </br>
+      <br/>
+      how to speak, how to hide.
      </p>
      <p class="reveal">
       But something in you always paused —
-      <br>
-       wondering why none of it felt like home.
-      </br>
+      <br/>
+      wondering why none of it felt like home.
      </p>
      <p class="reveal">
       You played the roles.
-      <br>
-       You wore the masks.
-       <br>
-        But deep down, you knew… they were not you.
-       </br>
-      </br>
+      <br/>
+      You wore the masks.
+      <br/>
+      But deep down, you knew… they were not you.
      </p>
      <p class="reveal">
       You’ve searched for a name for the ache.
-      <br>
-       Tried to explain it — but words fell short.
-       <br>
-        Because it wasn’t language you were missing.
-        <br>
-         It was memory.
-        </br>
-       </br>
-      </br>
+      <br/>
+      Tried to explain it — but words fell short.
+      <br/>
+      Because it wasn’t language you were missing.
+      <br/>
+      It was memory.
      </p>
      <h3 class="reveal" style="font-size: 28px; font-weight: bold; margin-top: 60px;">
       🕊 For the Silent Rememberers
      </h3>
      <p class="reveal">
       You feel others’ pain — as if it were your own.
-      <br>
-       You carry a sorrow that didn’t begin with you.
-       <br/>
-       And a love too vast to be contained in one life.
-      </br>
+      <br/>
+      You carry a sorrow that didn’t begin with you.
+      <br/>
+      And a love too vast to be contained in one life.
      </p>
      <p class="reveal">
       Even when you didn’t have the words,
