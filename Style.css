@@ -168,61 +168,37 @@ section {
 }
 
 
+
 nav.swipe-nav {
-  width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow-x: auto;
+  white-space: nowrap;
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
   padding: 12px 20px;
-  scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  justify-content: flex-start;
+}
+
+nav.swipe-nav::-webkit-scrollbar {
+  display: none;
 }
 
 .nav-item {
   display: inline-block;
-  margin: 0 16px;
-  scroll-snap-align: center;
+  margin: 0 18px;
+  flex: 0 0 auto;
+  font-weight: bold;
 }
 
 .nav-item a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
-  font-size: 1em;
-  transition: opacity 0.3s;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
 }
 
 .nav-item a:hover {
   text-decoration: underline;
-}
-
-.nav-item.active a {
-  opacity: 1;
-}
-
-@media (max-width: 768px) {
-  nav.swipe-nav {
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-  }
-
-  nav.swipe-nav::-webkit-scrollbar {
-    display: none;
-  }
-}
-
-.swipe-nav {
-  flex-wrap: nowrap;
-}
-
-.nav-item {
-  flex: 0 0 auto;
-  margin-right: 20px;
-  scroll-snap-align: center;
 }
