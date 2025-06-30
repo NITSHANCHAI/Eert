@@ -50,3 +50,9 @@ nav.swipe-nav::after {
   color: white !important;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.6) !important;
 }
+
+
+/* Force nav items to take up space so nav becomes scrollable */
+.nav-item {
+  min-width: 100px !important;
+}
